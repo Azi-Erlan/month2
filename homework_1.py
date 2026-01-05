@@ -6,11 +6,11 @@ class Person:
         self.higher_education = higher_education
 
     def introduce(self):
-        print(f'Hy my name is {self.name}, I was born on {self.birth_date}. I work as a {self.occupation}, and higher education is {self.higher_education}')
+        print(f'Hy my name is {self.name}, I was born on {self.birth_date}. I work as a {self.occupation}, and {self.higher_education}')
 
-person_anna = Person('Anna', '21 oktober', 'manager', True)
-person_johan = Person('Johan', '5 December', 'woodcutter', False)
-person_adam = Person('Adam', '10 May', 'taxi driver', False )
+person_anna = Person('Anna', '21 oktober', 'manager', "i have a higher education")
+person_johan = Person('Johan', '5 December', 'woodcutter', "i don't have a higher education")
+person_adam = Person('Adam', '10 May', 'taxi driver', "i don't have a higher education" )
 print(person_anna.name)
 print(person_anna.birth_date)
 print(person_anna.occupation)

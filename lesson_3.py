@@ -15,10 +15,16 @@ class Bus(Car):
         super().__init__(model, color)
         self.number = number
     def drive_to(self, destination):
-       super()
-       print(f'Bus {self.model} driving to', destination)
+       super().drive_to(destination)
+       print(f'Bus {self.number} driving to', destination)
 
-bus_42 = Bus('Ikarus', 'green')
-print(bus_42.number)
-print(bus_42.speed)
-bus_42.drive_to('Bishkek')
+class Truck(Car):
+    def drive_to(self, destination):
+        print(f'Truck driving to', destination)
+
+bus_42 = Bus("Mercedes", "red", 42)
+truck = Truck("MAN","white")
+car_subaru = Car("Subaru", "red")
+vehicles = (bus_42, truck, car_subaru)
+for v in vehicles:
+    v.drive_to("Bishkek")

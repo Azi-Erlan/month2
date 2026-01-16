@@ -4,7 +4,6 @@ class Contact:
         self.phone_number = phone_number
         self.id = contact_id
 
-
     @classmethod
     def validate_phone_number(cls, phone_number):
         return(
@@ -30,7 +29,6 @@ class ContactList:
         print('Список контактов:')
         for contact in cls.all_contacts:
             print(contact.name, contact.phone_number, contact.id)
-
 
 ContactList.add_contact("Шарипов Санжар", "0555123456")
 ContactList.add_contact("Джумашева Айжан", "0700123456")
